@@ -1,38 +1,37 @@
+import os
 def anggota():
-    print("----------------------------------------------------")
+    print("-"*52)
     print("      PROJEK AKHIR ALGORITMA DAN PEMROGRAMAN")
     print("\tInstitut Teknologi Telkom Surabaya")
-    print("----------------------------------------------------")
+    print("-")
     print("1. Cellion Ascent Savredy\t\t  1102210006")
     print("2. Firman Ahmad Maulana\t\t\t  1102210008")
-    print("----------------------------------------------------")
+    print("-"*52)
     print("tekan [enter] untuk melanjutkan Aplikasi ")
     input ()
     namafilm ()
 
 def namafilm():
-    import os
     os.system("CLS")
     print ("\n")
-    print ("=================================================")
+    print ("="*52)
     print ("\tSELAMAT DATANG PARA PENONTON")
     print ("\t\t BIOSKOP XXj")
-    print ("-------------------------------------------------")
+    print ("-"*52)
 def menu():
     print("Tekan (enter) untuk melanjutkan aplikasi ")
     input()
     namafilm ()
  
 def namafilm ():
-    import os
     os.system("CLS")
     print("\n")
-    print("====================================================")
+    print("="*52)
     print(" SELAMAT DATANG DI APLIKASI PEMESANAN TIKET BIOSKOP ")
     print("                   BIOSKOP XXj                      ")
-    print("====================================================")
+    print("="*52)
     print("|| Kode              Judul                  Harga ||")
-    print("====================================================")
+    print("="*52)
     print("|| JVE      Jakarta Vs Evreybody            60000 ||")
     print("|| KKN      KKN di Desa Penari              45000 ||")
     print("|| DRN      Dear Nathan Thank You Salma     45000 ||")
@@ -40,22 +39,22 @@ def namafilm ():
     print("|| MSG      My Sassy Girl                   50000 ||")
     print("|| TTT      Teka-Teki Tika                  55000 ||")
     print("|| KKR      Kukira Kau Rumah                65000 ||")
-    print("====================================================")
+    print("="*52)
     print("||                   KODE KURSI                   ||")
-    print("====================================================")
+    print("="*52)
     print("||       A1      A2      A3      A4      A5       ||")
     print("||       B1      B2      B3      B4      B5       ||")
     print("||       C1      C2      C3      C4      C5       ||")
     print("||       D1      D2      D3      D4      D5       ||")
     print("||       E1      E2      E3      E4      E5       ||")
     print("||       F1      F2      F3      F4      F5       ||")
-    print("====================================================")
+    print("="*52)
     print("||\t\t      WAKTU   \t\t          ||")
     print("||\t\t   10.00-12.00   \t\t  ||")
     print("||\t\t   13.00-15.00   \t\t  ||")
     print("||\t\t   16.00-18.00   \t\t  ||")
     print("||\t\t   19.00-21.00   \t\t  ||")
-    print("====================================================")
+    print("="*52)
     print("         -----Silahkan Buat Pesanan-----")
 def tiket():
     with open("tiket.txt","w+")as file:
@@ -177,28 +176,26 @@ Kembalian \t: {}
 
 
 def cetak() :
-    import os 
     os.system("CLS")
     print("\n")
-    print("====================================================")
+    print("="*52)
     print("\t\t     BIOSKOP XXj")
     print("\t\t     CETAK TIKET")
     print("Tiket telah dicetak, silahkan diambil pada file txt")
     print("\t       Terima kasih telah memesan tiket")
     print("\t           Selamat menonton")
-    print("====================================================")
+    print("="*52)
 
 def salah() :
-    import os 
     os.system("CLS")
     print("\n")
-    print("====================================================")
+    print("="*52)
     print("\t\t     BIOSKOP XXj")
     print("\t\t     TIKET TIDAK DAPAT DICETAK")
     print("     Diharapkan untuk memasukan pemesanan dengan benar")
     print("\t    Agar tiket dapat dicetak")
     print("\t   Mohon maaf atas ketidaknyamanannya")
-    print("====================================================")
+    print("="*52)
 
 anggota()
 menu()
