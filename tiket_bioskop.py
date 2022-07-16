@@ -93,9 +93,9 @@ def tiket():
                 print("\nMohon maaf film tidak tersedia")
                 break
 
-            while True :
-                Jawab = input("apakah anda ingin mengubah pemesanan? (Y/N)\t\t:")
-                if Jawab == "Y" or Jawab == "y":
+             while True :
+                Jawab = input("apakah anda ingin mengubah atau membatalkan pemesanan? (Ubah/Batalkan/Tidak)\t\t:")
+                if Jawab == "Ubah" or Jawab == "ubah":
                     ubah = str(input("masukkan kode film \t\t:"))
                     kursi = str(input("Masukkan kode kursi \t\t:"))
                     waktu = str(input("Masukkan waktu menonton \t\t:"))
@@ -125,8 +125,11 @@ def tiket():
                     else:
                         print('\nfilm tidak tersedia\n')
                         continue
-                if Jawab == "N" or Jawab == "n":
-                    break  
+                if Jawab == "Batalkan" or Jawab == "batalkan":
+                    print("Pesanan dibatalkan, program akan ditutup")
+                    quit()
+                if Jawab == "Tidak" or Jawab == "tidak":
+                    break   
 
             bayar = input("Masukkan jumlah uang pembayaran \t:")
             total = int(bayar)-int(harga)
