@@ -153,9 +153,42 @@ Cost \t\t: {}
 Kembalian \t: {}
 ====================================================
 '''.format(i,Judul,kursi,waktu,harga,bayar,total)
-            file= open ("tiket.txt", "a+")
-            file.write(teks)
-            file.close()
+             z = open("tiket.txt", "a")
+            z.write('\n')
+            z.writelines(teks)
+            z.close()
+            f = open('tampung.txt', 'a')
+            f.write('\n')
+            f.writelines(Judul)
+            f.write(', ')
+            f.writelines(kursi)
+            f.write(', ')
+            f.writelines(waktu)
+            f.write(', ')
+            f.writelines(str(harga))
+            f.close
+            print('''
+Apakah anda ingin mengurutkan data tiket?
+[1] Jika ingin mengurutkan data
+[2] Jika tidak ingin mengurutkan
+            ''')
+            print('Silahkan Masukan Pilihan : ', end='')
+            urutin=str(input())
+            if urutin == '1':            
+                def urutkan():
+                    def sorting(filename):
+                        infile = open(filename)
+                        words = []
+                        for line in infile:
+                            temp = line.split('\n')
+                            for i in temp:
+                                words.append(i)
+                        infile.close()
+                        words.sort()
+                        print('data telah di urutkan')
+                        print(words)
+                    sorting("tampung.txt")
+                urutkan()
     
     print("\ntekan (enter) untuk mencetak tiket")
     input ()
