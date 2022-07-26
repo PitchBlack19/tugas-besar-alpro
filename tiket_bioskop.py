@@ -191,7 +191,7 @@ Apakah anda ingin mengurutkan data tiket?
                 urutkan()
     
     print("\ntekan (enter) untuk mencetak tiket")
-    input ()
+    input ().upper()
     if kode == "JVE":
         cetak()
     elif kode == "KKN":
