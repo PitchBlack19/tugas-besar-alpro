@@ -57,79 +57,79 @@ def namafilm ():
     print("="*52)
     print("         -----Silahkan Buat Pesanan-----")
 def tiket():
-    with open("tiket.txt","w+")as file:
-        file = open ("tiket.txt", "w")
-        n =int(input("Masukkan banyak tiket yang dipesan :"))
-        for i in range(1,n+1):
+    n =int(input("Masukkan banyak tiket yang dipesan :"))
+    for i in range(1,n+1):
             print("\n Tiket ke-",i)
-            kode = str(input("Masukkan kode film \t\t:"))
+            kode = str(input("Masukkan kode film \t\t:")).upper()
             kursi = str(input("Masukkan kode kursi \t\t:"))
             waktu = str(input("Masukkan waktu menonton \t:"))
             Judul = kode
             harga = kode
 
-            if kode == "JVE" or kode == "jve":
+            if kode == "JVE":
                 Judul = "Jakarta vs Everybody"
                 harga = 60000
-            elif kode == "KKN" or kode == "kkn":
+            elif kode == "KKN":
                 Judul = "KKN di Desa Penari "
                 harga = 45000
-            elif kode == "DRN" or kode == "drn":
+            elif kode == "DRN":
                 Judul = "Dear Nathan Thank You Salma"
                 harga = 45000
-            elif kode == "R3W" or kode == "r3w":
+            elif kode == "R3W":
                 Judul = "Ranah 3 Warna"
                 harga = 50000
-            elif kode == "MSG" or kode == "msg":
+            elif kode == "MSG":
                 Judul = "My Sally Girl"
                 harga = 50000 
-            elif kode == "TTT" or kode == "ttt":
+            elif kode == "TTT":
                 Judul = "Teka-Teki Tika"
                 harga = 55000
-            elif kode == "KKR" or kode == "kkr":
+            elif kode == "KKR":
                 Judul = "Kukira Kau Rumah"
                 harga = 65000 
             else:
                 print("\nMohon maaf film tidak tersedia")
                 break
 
-             while True :
-                Jawab = input("apakah anda ingin mengubah atau membatalkan pemesanan? (Ubah/Batalkan/Tidak)\t\t:")
-                if Jawab == "Ubah" or Jawab == "ubah":
-                    ubah = str(input("masukkan kode film \t\t:"))
+
+            while True :
+                Jawab = input("apakah anda ingin mengubah atau membatalkan pemesanan? (UBAH/BATALKAN/TIDAK)\t\t:").upper()
+                if Jawab == "UBAH":
+                    ubah = str(input("masukkan kode film \t\t:")).upper()
                     kursi = str(input("Masukkan kode kursi \t\t:"))
                     waktu = str(input("Masukkan waktu menonton \t\t:"))
                     Judul = kode
                     harga = kode
-                    if ubah == "JVE" or ubah == "jve":
+
+                    if ubah == "JVE":
                         Judul = "Jakarta vs Everybody"
                         harga = 60000
-                    elif ubah == "KKN" or ubah == "kkn":
+                    elif ubah == "KKN":
                         Judul = "KKN di Desa Penari "
                         harga = 45000
-                    elif ubah == "DRN" or ubah == "drn":
+                    elif ubah == "DRN":
                         Judul = "Dear Nathan Thank You Salma"
                         harga = 45000
-                    elif ubah == "R3W" or ubah == "r3w":
+                    elif ubah == "R3W":
                         Judul = "Ranah 3 Warna"
                         harga = 50000
-                    elif ubah == "MSG" or ubah == "msg":
+                    elif ubah == "MSG":
                         Judul = "My Sally Girl"
                         harga = 50000
-                    elif ubah == "TTT" or ubah == "ttt":
+                    elif ubah == "TTT":
                         Judul = "Teka-Teki Tika"
                         harga = 55000
-                    elif ubah == "KKR" or ubah == "kkr":
+                    elif ubah == "KKR":
                         Judul = "Kukira Kau Rumah"
                         harga = 65000
                     else:
                         print('\nfilm tidak tersedia\n')
                         continue
-                if Jawab == "Batalkan" or Jawab == "batalkan":
+                if Jawab == "BATALKAN":
                     print("Pesanan dibatalkan, program akan ditutup")
                     quit()
-                if Jawab == "Tidak" or Jawab == "tidak":
-                    break   
+                if Jawab == "TIDAK":
+                    break  
 
             bayar = input("Masukkan jumlah uang pembayaran \t:")
             total = int(bayar)-int(harga)
