@@ -192,19 +192,19 @@ Apakah anda ingin mengurutkan data tiket?
     
     print("\ntekan (enter) untuk mencetak tiket")
     input ()
-    if kode == "JVE" or kode == "jve":
+    if kode == "JVE":
         cetak()
-    elif kode == "KKN" or kode == "kkn":
+    elif kode == "KKN":
         cetak()
-    elif kode == "DRN" or kode == "drn":
+    elif kode == "DRN":
         cetak()
-    elif kode == "R3W" or kode == "r3w":
+    elif kode == "R3W":
         cetak ()
-    elif kode == "MSG" or kode == "msg":
+    elif kode == "MSG":
         cetak()
-    elif kode == "TTT" or kode == "ttt":
+    elif kode == "TTT":
         cetak ()
-    elif kode == "KKR" or kode == "kkr":
+    elif kode == "KKR":
         cetak() 
     else:
         salah()
