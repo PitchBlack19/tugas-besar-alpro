@@ -153,7 +153,7 @@ Cost \t\t: {}
 Kembalian \t: {}
 ====================================================
 '''.format(i,Judul,kursi,waktu,harga,bayar,total)
-             z = open("tiket.txt", "a")
+            z = open("tiket.txt", "a")
             z.write('\n')
             z.writelines(teks)
             z.close()
